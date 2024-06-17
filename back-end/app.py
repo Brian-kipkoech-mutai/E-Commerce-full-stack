@@ -14,7 +14,7 @@ def home():
     return 'Set up ready...!'
 
 @app.route('/login')
-def home():
+def login():
     """
     Login 
     """
