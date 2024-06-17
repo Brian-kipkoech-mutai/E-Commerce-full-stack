@@ -56,4 +56,10 @@ jobs:
         run: |
           cd back-end
           . venv/bin/activate
-          pylint .
+          pylint *.py
+
+      - name: Run tests
+        run: |
+          cd backend
+          . venv/bin/activate
+          pytest
