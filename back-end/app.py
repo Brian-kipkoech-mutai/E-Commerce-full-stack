@@ -18,7 +18,7 @@ def home():
     """
     Login 
     """
-    return 'Login'
+    return 'Auth token'
 
 if __name__ == '__main__':
     app.run(debug=True)
