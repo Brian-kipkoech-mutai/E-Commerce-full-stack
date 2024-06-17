@@ -24,12 +24,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd frontend
+          cd front-end
           npm install
 
       - name: Run lint
         run: |
-          cd frontend
+          cd front-end
           npm run lint
 
   backend:
@@ -47,14 +47,14 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd backend
+          cd back-end
           python -m venv venv
           . venv/bin/activate
           pip install -r requirements.txt
 
       - name: Run lint
         run: |
-          cd backend
+          cd back-end
           . venv/bin/activate
           pylint .
 
