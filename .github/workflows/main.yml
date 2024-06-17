@@ -60,6 +60,6 @@ jobs:
 
       - name: Run tests
         run: |
-          cd backend
+          cd back-end
           . venv/bin/activate
           pytest
