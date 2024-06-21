@@ -6,7 +6,7 @@ import { Amex, MasterCard, Visa } from "./PaymetsLogo";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 py-6  ">
+    <footer className=" py-6  ">
       <div className="flex justify-between flex-wrap max-w-screen-lg mx-auto">
         {" "}
         <section className="flex flex-col gap-3">
@@ -15,7 +15,7 @@ const Footer = () => {
             <span className="font-bold text-lg">TrendHive</span>
           </div>
           <div>
-            <p className="text-sm text-muted-foreground ">
+            <p className="text-sm text-muted-foreground  ">
               TrendHive: Where Trends Thrive
             </p>
           </div>
