@@ -149,24 +149,7 @@ const HomePage = () => {
               </div>
             </section>
           </section>
-          <section className="bg-gray-100 py-20">
-            <section className="max-w-screen-lg  mx-auto  flex justify-between items-center">
-              <div className="space-y-5">
-                <h2 className="text-2xl font-bold">Join Our Newsletter</h2>
-                <p className="text-muted-foreground">
-                  We love to surprise our subscribers with occasional gifts.
-                </p>
-              </div>
-              <div className="flex gap-3 ">
-                <Input
-                  id="email"
-                  className="placeholder:text-muted-foreground placeholder:font-semibold"
-                  placeholder="your Email adress"
-                ></Input>
-                <Button>Subscribe</Button>
-              </div>
-            </section>
-          </section>
+           
         </section>
       </section>
     </div>

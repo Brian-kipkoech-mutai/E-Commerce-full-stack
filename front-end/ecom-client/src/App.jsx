@@ -12,6 +12,7 @@ import ResetPs from "./Presentational/ResetPassword";
 import ForgotPs from "./Presentational/forgot";
 import HomePage from "./Presentational/HomePage";
 import BestSelling from "./Presentational/BestSelling";
+import Product from "./Presentational/Product";
 
 function App() {
   const router = createBrowserRouter(
@@ -21,7 +22,8 @@ function App() {
         <Route element={<SignUp />}></Route>
         <Route element={<ResetPs />}></Route>
         <Route element={<ForgotPs />}></Route>
-        <Route path="/" element={<HomePage />}>
+        <Route path="/" element={<Product/>}></Route>
+        <Route  element={<HomePage />}>
           <Route path="/" element={<BestSelling />}></Route>
           <Route path=":category" element={<BestSelling />}></Route>
          
@@ -31,7 +33,7 @@ function App() {
   );
 
   return (
-    <div>
+    <div className="">
       <RouterProvider router={router} />
     </div>
   );

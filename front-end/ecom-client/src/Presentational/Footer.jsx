@@ -3,11 +3,31 @@ import ComapanyLogoPlain from "./CompaylogoPlain";
 import YoutubeIcon from "./YoutubeIcon";
 import { Link } from "react-router-dom";
 import { Amex, MasterCard, Visa } from "./PaymetsLogo";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   return (
     <footer className=" py-6  ">
-      <div className="flex justify-between flex-wrap max-w-screen-lg mx-auto">
+      <section className="bg-gray-100 py-20">
+        <section className="max-w-screen-lg  mx-auto  flex justify-between items-center">
+          <div className="space-y-5">
+            <h2 className="text-2xl font-bold">Join Our Newsletter</h2>
+            <p className="text-muted-foreground">
+              We love to surprise our subscribers with occasional gifts.
+            </p>
+          </div>
+          <div className="flex gap-3 ">
+            <Input
+              id="email"
+              className="placeholder:text-muted-foreground placeholder:font-semibold"
+              placeholder="your Email adress"
+            ></Input>
+            <Button>Subscribe</Button>
+          </div>
+        </section>
+      </section>
+      <div className="flex justify-between flex-wrap max-w-screen-lg mx-auto pt-20">
         {" "}
         <section className="flex flex-col gap-3">
           <div className="flex gap-2 items-center">
