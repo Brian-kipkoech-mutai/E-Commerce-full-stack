@@ -11,9 +11,6 @@ from flask_jwt_extended import (
 )
 from werkzeug.security import generate_password_hash, check_password_hash
 
-from sqlalchemy.exc import SQLAlchemyError
-from jwt import PyJWTError
-
 from models.main_models import User
 from engine.db_storage import DBStorage
 
@@ -67,7 +64,8 @@ def register_user():
             set_access_cookies(response, access_token)
             return response
 
-        except (SQLAlchemyError, PyJWTError) as e:
+        # pylint: disable=broad-except
+        except Exception as e:
             storage.rollback()
             traceback.print_exc()
             return jsonify(error=str(e)), 500
@@ -99,7 +97,8 @@ def login():
             set_access_cookies(response, access_token)
             return response
 
-        except (SQLAlchemyError, PyJWTError) as e:
+        # pylint: disable=broad-except
+        except Exception as e:
             traceback.print_exc()
             return jsonify(error=str(e)), 500
 
