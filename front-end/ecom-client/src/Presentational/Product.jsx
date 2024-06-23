@@ -16,7 +16,7 @@ import BestSelling from "./BestSelling";
 const Product = () => {
   return (
     <div>
-      <section className="flex gap-20 items-center  max-w-screen-lg mx-auto  pb-20">
+      <section className=" flex gap-20 items-center  max-w-screen-lg mx-auto  pb-20">
         <div className="w-[60%]   ">
           <Carousel className=" h-full">
             <CarouselContent className=" h-full">
@@ -144,7 +144,7 @@ const Product = () => {
             <h2 className="font-semibold text-2xl">Details</h2>
             <div className="space-y-10 ">
               <p className=" text-sm leading-relaxed tracking-wide text-muted-foreground">
-                Elevate your everyday style with our Men's Black T-Shirts, the
+                Elevate your everyday style with our Men\'s Black T-Shirts, the
                 ultimate wardrobe essential for modern men. Crafted with
                 meticulous attention to detail and designed for comfort, these
                 versatile black tees are a must-have addition to your

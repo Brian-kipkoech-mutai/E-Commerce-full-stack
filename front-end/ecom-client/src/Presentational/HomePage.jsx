@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import BestSelling from "./BestSelling";
 import Featured from "../assets/images/pexels-leticiacurveloph-26093505-removebg-preview.png";
 import { NavLink, Outlet } from "react-router-dom";
-import { Input } from "@/components/ui/input";
+ 
 
 const HomePage = () => {
   return (
